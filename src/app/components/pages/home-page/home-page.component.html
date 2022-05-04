@@ -1,0 +1,27 @@
+<main class="h-screen">
+  <!--Banner-->
+  <section class="flex justify-center content-center items-center flex-grow xl:h-screen h-3/4" id="banner">
+    <div
+      class="flex flex-col justify-center lg:absolute lg:right-24 lg:top-24 lg:w-6/12 w-10/12 h-1/2 p-4 md:p-14
+        bg-gradient-to-b from-white/30 to-gray-800/0 rounded-md text-gray-100 text-center"
+    >
+      <h1 class="text-3xl md:text-6xl text-gray-100">Josiah Navarro</h1>
+      <h2 class="text-lg md:text-3xl tracking-widest opacity-60 mt-2">Computer Science Graduate</h2>
+      <h2 class="text-lg md:text-3xl tracking-widest opacity-60 mb-2">Front-end Developer</h2>
+      <hr class="w-3/4 mx-auto my-5 border border-white opacity-20"/>
+      <div class="flex justify-center gap-24">
+        <a href="https://github.com/josiahnav" target="_blank">
+          <fa-icon
+            class="cursor-pointer"
+            [icon]="faGithub" size="3x"
+          ></fa-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/josiah-navarro/" target="_blank">
+          <fa-icon class="cursor-pointer" [icon]="faLinkedin" size="3x"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--Skill sets-->
+  <app-skill-section></app-skill-section>
+</main>

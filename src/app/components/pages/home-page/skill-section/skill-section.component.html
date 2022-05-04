@@ -1,0 +1,26 @@
+<section class="bg-gradient-to-b from-gray-800 to-black py-8 md:py-16 text-gray-300 text-center">
+  <div>
+    <h1 class="mb-8 text-3xl md:text-5xl uppercase tracking-widest">Skill Set</h1>
+<!--    <hr class="mx-48 my-5 opacity-30">-->
+    <section class="flex flex-col lg:flex-row gap-10 px-12 md:px-28 lg:px-16 xl:px-48">
+      <!--Front-end-->
+      <app-skill-card
+        class="lg:w-1/2"
+        [header]="'Front-end'"
+        [coreLogos]="frontEndCoreLogos"
+        [frameworkLogos]="frontEndFrameworkLogos"
+        [toolLogos]="frontEndToolLogos"
+      >
+      </app-skill-card>
+      <!--Back-end-->
+      <app-skill-card
+        class="lg:w-1/2"
+        [header]="'Back-end'"
+        [coreLogos]="backEndCoreLogos"
+        [frameworkLogos]="backEndFrameworkLogos"
+        [toolLogos]="backEndToolLogos"
+      >
+      </app-skill-card>
+    </section>
+  </div>
+</section>

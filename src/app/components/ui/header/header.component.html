@@ -1,0 +1,22 @@
+<header
+  class="absolute top-0 bg-gradient-to-b from-white to-gray-700/0 w-full px-2 md:px-5 py-2 md:py-4 z-50
+    text-gray-700 text-xl">
+  <div class="md:hidden">
+    <fa-icon [icon]="faBars" size="1x"></fa-icon>
+  </div>
+  <!--Full header-->
+  <div class="md:flex hidden">
+    <div class="flex-grow">
+      <span class="font-bold cursor-pointer" [routerLink]="'/home'">Josiah Navarro</span>
+    </div>
+    <nav class="grid grid-cols-4 text-center">
+    <span
+      *ngFor="let navigationItem of navigationItems"
+      class="w-24 cursor-pointer"
+      [routerLink]="navigationItem.path"
+    >
+      {{navigationItem.label}}
+    </span>
+    </nav>
+  </div>
+</header>
