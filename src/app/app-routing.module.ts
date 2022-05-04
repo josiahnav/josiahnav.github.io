@@ -7,8 +7,7 @@ import {ResumePageComponent} from './components/pages/resume-page/resume-page.co
 import {BlogPageComponent} from './components/pages/blog-page/blog-page.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: 'home', component: HomePageComponent},
+  {path: '', pathMatch: 'full', component: HomePageComponent},
   {path: 'about', component: AboutPageComponent},
   {path: 'resume', component: ResumePageComponent},
   {path: 'blog', component: BlogPageComponent}
